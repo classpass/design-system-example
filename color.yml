@@ -1,0 +1,10 @@
+global:
+  type: color
+  category: color
+props:
+  colorGray10:
+    value: "#f7f7f7"
+    comment: Default page background
+  colorBrand:
+    value: "#0055ff"
+    comment: ClassPass' key brand color

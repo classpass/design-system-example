@@ -1,0 +1,17 @@
+{
+  "name": "example-design-system",
+  "version": "1.0.0",
+  "description": "An example of how to use Theo to build a design system",
+  "dependencies": {
+    "theo": "salesforce-ux/theo"
+  },
+  "main": "index.js",
+  "author": "ClassPass",
+  "license": "MIT",
+  "scripts": {
+    "all": "yarn web && yarn js && yarn ios",
+    "web": "theo color.yml --transform web --format scss > colors.scss",
+    "js": "theo color.yml --format module.js > colors.js",
+    "ios": "theo color.yml --setup setup.js --format ios.color.swift > UIColor+Token.swift"
+  }
+}
